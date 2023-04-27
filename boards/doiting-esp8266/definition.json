@@ -1,0 +1,106 @@
+{
+    "boardName": "doiting-esp8266",
+    "mcuName": "esp8266",
+    "mcuRefVoltage": 3.3,
+    "displayName": "Doiting ESP8266",
+    "vendor":"Doiting",
+    "description": "Doiting ESP8266 with USB and Battery Charging.",
+    "productPageURL":"https://www.adafruit.com/product/2821",
+    "documentationURL":"https://learn.adafruit.com/adafruit-doiting--esp8266",
+    "installMethod":"web",
+    "esptool": {
+        "offset": "0x200000",
+        "chip": "esp8266",
+        "fileSystemSize": 2072576,
+        "blockSize": 8192,
+        "structure": {
+            "0x0": "wippersnapper.doiting_esp8266.littlefs.VERSION.bin"
+          }
+    },
+    "components": {
+      "digitalPins": [
+        {
+            "name": "D0",
+            "displayName": "D0 (Red LED)",
+            "dataType": "bool",
+            "hasPWM": true
+        },
+        {
+            "name": "D1",
+            "displayName": "D1",
+            "dataType": "bool",
+            "hasPWM": true,
+            "hasServo": true
+        },
+        {
+            "name": "D2",
+            "displayName": "D2 (Blue LED)",
+            "dataType": "bool",
+            "hasPWM": true
+        },
+        {
+            "name": "D4",
+            "displayName": "D4",
+            "dataType": "bool",
+            "hasPWM": true,
+            "hasServo": true
+        },
+        {
+            "name": "D5",
+            "displayName": "D5",
+            "dataType": "bool",
+            "hasPWM": true,
+            "hasServo": true
+        },
+        {
+            "name": "D12",
+            "displayName": "D12",
+            "dataType": "bool",
+            "hasPWM": true,
+            "hasServo": true
+        },
+        {
+            "name": "D13",
+            "displayName": "D13",
+            "dataType": "bool",
+            "hasPWM": true,
+            "hasServo": true
+        },
+        {
+            "name": "D14",
+            "displayName": "D14",
+            "dataType": "bool",
+            "hasPWM": true,
+            "hasServo": true
+        },
+        {
+            "name": "D15",
+            "displayName": "D15",
+            "dataType": "bool",
+            "hasPWM": true,
+            "hasServo": true
+        },
+        {
+            "name": "D16",
+            "displayName": "D16 - Deep Sleep Wake Pin",
+            "dataType": "bool",
+            "hasPWM": true,
+            "hasServo": true
+        }
+      ],
+      "analogPins": [
+        {
+            "name": "A0",
+            "displayName": "A0",
+            "dataType": "int16"
+        }
+      ],
+      "i2cPorts": [
+        {
+            "i2cPortId": 0,
+            "SDA": 4,
+            "SCL": 5
+        }
+      ]
+    }
+}
